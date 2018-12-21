@@ -6,7 +6,7 @@ let cancel = false;
 let jazzlevel;
 $(document).ready(() => {
   setTitle("Jazzify");
-  createSynth("piano");
+  //createSynth("piano");
   jazzlevel = "standard";
   setInterval(() => {
     $("#startMsg").removeClass("invisible");
@@ -155,16 +155,16 @@ $(document).ready(() => {
     $("#instpic").attr("src", newInstrument);
     if(currInstrument == 0){
       /*SET 'synth' EQUAL TO STANDARD SYNTH*/
-      createSynth("piano");
+      //createSynth("piano");
     }else if(currInstrument  == 1){
       /*SET 'synth' EQUAL TO PLUCKED SYNTH*/
-      createSynth("strings");
+      //createSynth("strings");
     }else if(currInstrument  == 2){
       /*SET 'synth' EQUAL TO HORN SOUNDING SYNTH*/
-      createSynth("synth");
+      //createSynth("synth");
     }else if(currInstrument  == 3){
       /*SET 'synth' EQUAL TO ANOTHER SYNTH*/
-      createSynth("guitar");
+      //createSynth("guitar");
     }
   });
 

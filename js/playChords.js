@@ -1,3 +1,4 @@
+/*
 let synth;
 let audio1;
 function createSynth(instrument) {
@@ -131,3 +132,4 @@ function playBlobAt(time) {
   audio1.currentTime = time;
   audio1.play();
 }
+*/
