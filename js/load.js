@@ -6,7 +6,7 @@ let cancel = false;
 let jazzlevel;
 $(document).ready(() => {
   setTitle("Jazzify");
-  //createSynth("piano");
+  createSynth("piano");
   jazzlevel = "standard";
   setInterval(() => {
     $("#startMsg").removeClass("invisible");
@@ -155,16 +155,16 @@ $(document).ready(() => {
     $("#instpic").attr("src", newInstrument);
     if(currInstrument == 0){
       /*SET 'synth' EQUAL TO STANDARD SYNTH*/
-      //createSynth("piano");
+      createSynth("piano");
     }else if(currInstrument  == 1){
       /*SET 'synth' EQUAL TO PLUCKED SYNTH*/
-      //createSynth("strings");
+      createSynth("strings");
     }else if(currInstrument  == 2){
       /*SET 'synth' EQUAL TO HORN SOUNDING SYNTH*/
-      //createSynth("synth");
+      createSynth("synth");
     }else if(currInstrument  == 3){
       /*SET 'synth' EQUAL TO ANOTHER SYNTH*/
-      //createSynth("guitar");
+      createSynth("guitar");
     }
   });
 
@@ -265,6 +265,7 @@ $(document).ready(() => {
 });
 
 function uploadBlobToServer(b) {
-    const fakeChords = [new Chord(["A4", "B4", "C4"], 1, .2), new Chord(["A4", "C4", "D4"], 2, .3), new Chord(["G4", "F4", "C4"], 3, .5), new Chord(["D4", "E4", "C4"], 4, .2)]
+    const fakeChords = [new Chord(["D4", "F#4", "A4"], 1, .2), new Chord(["A4", "C#4", "E4"], 2, .3), new Chord(["C#4", "E4", "G4"], 3, .5), new Chord(["D4", "F#4", "A4"], 4, .2), 
+                        new Chord(["D4", "F#4", "A4"], 5, .2), new Chord(["A4", "C#4", "E4"], 6, .3), new Chord(["C#4", "E4", "G4"], 7, .5), new Chord(["D4", "F#4", "A4"], 8, .2)]
     createChords(fakeChords);
 }

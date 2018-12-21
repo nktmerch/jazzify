@@ -1,50 +1,49 @@
-/*
 let synth;
 let audio1;
 function createSynth(instrument) {
   if (instrument == "piano") {
-    synth = new Tone.Sampler({"C1" : "js/C1.wav",
-                              "C2" : "js/C2.wav",
-                              "C3" : "js/C2.wav",
-                              "C4" : "js/C3.wav",
-                              "C5" : "js/C3.wav",
-                              "C6" : "js/C4.wav",
-                              "C7" : "js/C4.wav"
+    synth = new Tone.Sampler({"C1" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C1.wav",
+                              "C2" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C2.wav",
+                              "C3" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C2.wav",
+                              "C4" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C3.wav",
+                              "C5" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C3.wav",
+                              "C6" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C4.wav",
+                              "C7" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/C4.wav"
 
     }, function(){
       console.log("loaded");
     });
   }
   else if (instrument == "guitar") {
-    synth = new Tone.Sampler({"C1" : "js/guitarC1.wav",
-                              "C2" : "js/guitarC1.wav",
-                              "C3" : "js/guitarC2.wav",
-                              "C4" : "js/guitarC2.wav",
-                              "C5" : "js/guitarC3.wav",
-                              "C6" : "js/guitarC4.wav"
+    synth = new Tone.Sampler({"C1" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC1.wav",
+                              "C2" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC1.wav",
+                              "C3" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC2.wav",
+                              "C4" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC2.wav",
+                              "C5" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC3.wav",
+                              "C6" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/guitarC4.wav"
 
     }, function(){
       console.log("loaded");
     });
   }
   else if (instrument == "synth") {
-    synth = new Tone.Sampler({"C1" : "js/SynthC2.wav",
-                              "C2" : "js/SynthC2.wav",
-                              "C3" : "js/SynthC3.wav",
-                              "C4" : "js/SynthC4.wav",
-                              "C5" : "js/SynthC5.wav"
+    synth = new Tone.Sampler({"C1" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/SynthC2.wav",
+                              "C2" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/SynthC2.wav",
+                              "C3" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/SynthC3.wav",
+                              "C4" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/SynthC4.wav",
+                              "C5" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/SynthC5.wav"
 
     }, function(){
       console.log("loaded");
     });
   }
   else if (instrument == "strings") {
-    synth = new Tone.Sampler({"C1" : "js/stringsC1.wav",
-                              "C2" : "js/stringsC2.wav",
-                              "C3" : "js/stringsC2.wav",
-                              "C4" : "js/stringsC3.wav",
-                              "C5" : "js/stringsC4.wav",
-                              "C6" : "js/stringsC5.wav"
+    synth = new Tone.Sampler({"C1" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC1.wav",
+                              "C2" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC2.wav",
+                              "C3" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC2.wav",
+                              "C4" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC3.wav",
+                              "C5" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC4.wav",
+                              "C6" : "https://raw.githubusercontent.com/nktmerch/jazzify/master/wav/stringsC5.wav"
 
     }, function(){
       console.log("loaded");
@@ -132,4 +131,3 @@ function playBlobAt(time) {
   audio1.currentTime = time;
   audio1.play();
 }
-*/
