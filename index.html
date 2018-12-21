@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jazzify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/p5.sound.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/load.js"></script>
+  <script src="js/Tone.js"></script>
+  <script src="js/PlayChords.js"></script>
+  <script src="js/account_functions.js"></script>
+</head>
+<body>
+  <div id="page">
+  <div>
+    <div  id="titleBox" class="startTitle" class="center">
+    </div>
+  </div>
+  <div id="startMsg" class="invisible">
+    <p>
+      Scroll to start
+    </p>
+    <img id="scrollPic" src="https://png.icons8.com/metro/1600/circled-up-2.png">
+  </div>
+  <div id="songEditor" class="invisible">
+
+    <div id="microphoneBox">
+      <p id="amRecording">Click to record</p>
+      <img id="mic" src="https://png.icons8.com/metro/1600/microphone.png">
+    </div>
+    
+    <div id="selectJazz">
+      <p>
+        Standard
+      </p>
+      <input type="radio" id="standard" checked="checked" name="jazzlevel">
+      <p>
+        Jazzy
+      </p>
+      <input type="radio" id="jazzy" name="jazzlevel">
+      <p>
+        Random
+      </p>
+      <input type="radio" id="random" name="jazzlevel">
+    </div>
+    
+    <div id="login" class="loginBox">
+      <p>
+        Username
+      </p>
+      <input type="text" name="username" id="username"><br>
+      <p>
+        Password
+      </p>
+      <input type="password" name="password" id="password"><br>
+      <p id="loginUser" class="knob">
+        Login
+      </p>
+      <p class="knob back">
+        Back
+      </p>
+    </div>
+    
+    <div id="newAccount" class="loginBox">
+      <p>
+        Username
+      </p>
+      <input type="text" name="newUsername" id="newUsername"><br>
+      <p>
+        Password
+      </p>
+      <input type="password" name="newPassword" id="newPassword"><br>
+      <p id="createAccount" class="knob">
+        Create Account
+      </p>
+      <p class="knob back">
+        Back
+      </p>
+    </div>
+    
+    <div id="accountOptions" class="loginBox">
+      <p id="createYourAccount" class="knob">Create Account</p>
+      <p id="showLogin" class="knob">Log In</p>
+    </div>
+    
+    <div id="userSongs" class="loginBox">
+      <div id="oldSongs" class="loginBox">
+      </div>
+      <div id="currentSong" class="loginBox">
+        <p>
+          Song Name
+        </p>
+        <input type="text" name="songName" id="songName"><br>
+        <p id="saveSong" class="knob">
+          Save Song
+        </p>
+        <p id="logOut" class="knob">
+          Log Out
+        </p>
+      </div>
+    </div>
+    
+    
+    <div id="noteEditor">
+      <div id="currNote">
+        <p>Chord</p>
+        <div id="freqBox">
+          <p id="noteFreq"></p>
+        </div>
+        <div>
+          <label>
+            <input type="radio" id="major" name="majormin" checked="checked">
+            <span class="mm"> Major </span>
+          </label>
+          <br>
+          <label>
+            <input type="radio" id="minor" name="majormin">
+            <span class="mm"> Minor </span>
+          </label>
+        </div>
+        <input type="range" min="0" max="10" value="5" id="noteSelector" class="slider">
+        <div id="selectTone">
+          <p>Tone</p>
+          <img class="instrument" id="instpic" src="http://www.freepngimg.com/thumb/piano/8-2-piano-picture-thumb.png">
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="recordBox">
+      <script src='js/record.js'></script>
+    </div>
+    
+  </div>
+  </div>
+  <!-- The Modal -->
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <p id="soundGood">Sound good?</p>
+    <audio id="myAudio" controls>
+  		Your browser does not support the audio element.
+	  </audio>
+    <button id="generate">Generate accompaniment</button>
+    <button id="cancel">Record again</button>
+  </div>
+
+</div>
+</body>
+</html>
